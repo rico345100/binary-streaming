@@ -1,0 +1,26 @@
+{
+  "name": "binary-streaming",
+  "version": "1.0.0",
+  "description": "Sending binary file to other client reailtime via streaming server, without saving into server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rico345100/binary-streaming"
+  },
+  "keywords": [
+    "socket",
+    "binary",
+    "streaming"
+  ],
+  "author": ".modernator",
+  "license": "ISC",
+  "dependencies": {
+    "evsocket": "^1.0.211",
+    "evsocket-client": "^1.0.212",
+    "express": "^4.14.1",
+    "jquery": "^3.1.1"
+  }
+}

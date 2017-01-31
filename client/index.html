@@ -1,0 +1,52 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Realtime Chat App with EvSocket</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		html, body {
+			width: 100%;
+			height: 100%;
+		}
+		body {
+			padding: 20px;
+		}
+		li {
+			list-style-position: inside;
+		}
+		h4 {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>Binary File Streaming via EvSocket</h1>
+	<h4>Warning! This is experimental example for streaming binary data via Server without saving, one input to multiple output.</h4>
+	<h4>Please don't upload file when streaming, it may causes error.</h4>
+	<br />
+
+	<p>Your ID: <span id="userid"></span></p>
+	<br />
+
+	<p>Connected:</p>
+	<ul id="userlist"></ul>
+
+	<br />
+	<hr />
+	<br />
+
+	<form id="fileForm">
+		<p>Select the file to send</p>
+		<input type="file" id="file" />
+		<input type="submit" value="Start" />
+	</form>
+	
+	<script src="/evsocket-client.js"></script>
+	<script src="/jquery.js"></script>
+	<script src="/app.js"></script>
+</body>
+</html>
