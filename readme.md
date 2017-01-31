@@ -16,8 +16,8 @@ The idea is simple, server receiving the chunk of binary data(ArrayBuffer) from 
 Server just let stream go to the clients directly, not it's own memory or disk.
 
 This has 2 good things:
-1. User that want to get the file from another user don't need to wait until file is uploaded server. It just got the data realtime.
-2. Server doesn't need to save file. Means save more resources.
+- User that want to get the file from another user don't need to wait until file is uploaded server. It just got the data realtime.
+- Server doesn't need to save file. Means save more resources.
 
 In client, only to do is receiving chunks from server, and just combine them into single binary file and download itself(thanks to HTML5 URL and Blob!).
 
@@ -52,8 +52,8 @@ WebRTC는 클라이언트(피어)간 실시간 P2P 통신이 가능하게 해주
 서버는 스트림을 그냥 클라이언트로 바로 흘려보낼뿐, 어디에도 데이터를 기록하지 않습니다.
 
 이는 2가지 이점을 지는데요:
-1. 사용자가 다른 사용자가 서버에 파일을 업로드하는지 기다릴 필요없이 실시간으로 파일을 교환할 수 있다.
-2. 서버가 파일을 저장할 필요가 없으므로 리소스가 절약된다.
+- 사용자가 다른 사용자가 서버에 파일을 업로드하는지 기다릴 필요없이 실시간으로 파일을 교환할 수 있다.
+- 서버가 파일을 저장할 필요가 없으므로 리소스가 절약된다.
 
 클라이언트가 할 일은 그냥 서버에서 전달된 청크를 하나의 바이너리로 합쳐서 스스로 다운받는것 뿐 입니다.
 
